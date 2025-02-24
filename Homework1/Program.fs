@@ -14,14 +14,14 @@ let factorial n =
 
 /// Function to compute fibonacci number by its position
 let fibonacci n =
-        if n < 0 then None else
+    if n < 0 then None else
         
-        let rec recFibonacci n cur next =
-            match n with
-            | 0 -> Some(cur)
-            | _ -> recFibonacci (n - 1) next (cur + next)
+    let rec recFibonacci n cur next =
+        match n with
+        | 0 -> Some(cur)
+        | _ -> recFibonacci (n - 1) next (cur + next)
         
-        recFibonacci n 0 1
+    recFibonacci n 0 1
 
 
 /// Function to reverse a list
