@@ -2,15 +2,14 @@
 
 /// Function to compute factorial of the given number
 let factorial n =
-    if n < 0 then
-        None
-    else
-        let rec recFactorial n acc =
-            match n with
-            | 0 -> Some(acc)
-            | _ -> recFactorial (n - 1) (n * acc)
+    if n < 0 then None else
 
-        recFactorial n 1
+    let rec recFactorial n acc =
+        match n with
+        | 0 -> Some(acc)
+        | _ -> recFactorial (n - 1) (n * acc)
+
+    recFactorial n 1
 
 
 /// Function to compute fibonacci number by its position
