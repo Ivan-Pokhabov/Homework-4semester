@@ -29,8 +29,9 @@ let readFromFile path =
         |> Array.toList
         |> List.map (fun line -> 
             let parts = line.Split('-')
-            parts.[0], parts.[1]
+            Contact(parts.[0], parts.[1])
             )
+        |> Phonebook
         |> Some
 
 let storeToFile(path, phonebook) =
