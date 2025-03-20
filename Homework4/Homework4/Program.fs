@@ -18,13 +18,13 @@ let displayMenu() =
 let rec main phonebook =
     displayMenu()
     printf "Enter your choice: "
-    let choice = Console.ReadLine()
+    let command = Console.ReadLine()
 
-    match choice with
+    match command with
     | "1" ->
         printf "Enter the contact name: "
         let name = Console.ReadLine()
-        printf "Enter the contact number: "
+        printf "Enter the contact phone: "
         let phone = Console.ReadLine()
         let newContact = Contact(name, phone)
         printfn "Contact added successfully.\n"
@@ -34,12 +34,12 @@ let rec main phonebook =
         printf "Enter the contact name to search: "
         let name = Console.ReadLine()
         match findByName(name, phonebook) with
-        | Some number -> printfn "Contact found: %s - %s\n" name number
+        | Some phone -> printfn "Contact found: %s - %s\n" name phone
         | None -> printfn "Contact not found.\n"
         main phonebook
 
     | "3" ->
-        printf "Enter the contact number to search: "
+        printf "Enter the contact phone to search: "
         let phone = Console.ReadLine()
         match findByPhone(phone, phonebook) with
         | Some name -> printfn "Contact found: %s - %s\n" name phone
