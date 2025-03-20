@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Phonebook.test.fs" />
     <Compile Include="BracketBalance.test.fs" />
     <Compile Include="PointFree.test.fs" />
     <Compile Include="Program.fs" />
