@@ -63,7 +63,7 @@ module LocalNetworkTests =
         Assert.That(statuses, Is.EqualTo [true; false])
 
     [<Test>]
-    let ``Step should not infect when chance is 0`` () =
+    let ``Step should not inject when chance is 0`` () =
         let os = Windows 0 :> IOperatingSystem
         let computer1 = Computer(1, os)
         let computer2 = Computer(2, os)
@@ -80,7 +80,7 @@ module LocalNetworkTests =
         Assert.That(computer2.IsInjected, Is.False)
 
     [<Test>]
-    let ``All computers should eventually get infected`` () =
+    let ``All computers should eventually get injected`` () =
         let os = LolOS 100 :> IOperatingSystem
         let computer1 = Computer(1, os)
         let computer2 = Computer(2, os)
