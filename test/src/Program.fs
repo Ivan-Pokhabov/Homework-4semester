@@ -1,10 +1,10 @@
 ﻿module Test
 
-// Infinity sequence of numbers 1, -1, 1, ..., (-1)^i
-let alternatingSeq = Seq.initInfinite (fun i -> pown -1 i)
+// Function that generate infifnity sequence of numbers 1, -1, 1, ..., (-1)^i
+let alternatingSeq() = Seq.initInfinite (fun i -> pown -1 i)
 
 // Function that generate infinity sequense of numbers 1, -2, 3, ..., i * (-1)^i
-let targetSequence() = Seq.map2 (*) (Seq.initInfinite ((+) 1)) alternatingSeq
+let targetSequence() = Seq.map2 (*) (Seq.initInfinite ((+) 1)) (alternatingSeq())
 
 
 // Strcut of binary tree
