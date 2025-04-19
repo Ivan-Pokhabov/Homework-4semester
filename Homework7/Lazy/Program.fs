@@ -5,15 +5,15 @@ type ILazy<'a> =
     abstract member Get: unit -> 'a
 
 type LazySimple<'a>(supplier: unit -> 'a) =
-        let mutable result = None
-        interface ILazy<'a> with
-            member _.Get() =
-                match result with
-                | Some value -> value
-                | None ->
-                    let computed = supplier()
-                    result <- Some computed
-                    computed
+    let mutable result = None
+    interface ILazy<'a> with
+        member _.Get() =
+            match result with
+            | Some value -> value
+            | None ->
+                let computed = supplier()
+                result <- Some computed
+                computed
 
 type LazyConcurrent<'a>(supplier: unit -> 'a) =
     let mutable result = None
