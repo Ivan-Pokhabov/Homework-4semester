@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath, amssymb, scalerel, amsfonts, mathtools}
+
+\author{Иван Похабов}
+\date{April 2025}
+
+\begin{document}
+
+\section*{Grammar}
+
+\noindent<Term> ::= <Term'> | <Application> \\
+<Application> ::= <Term'> <Spaces> <Term> \\
+<Term'> ::= <Abstraction> | <Var> | '(' <Term> ')' \\
+<Abstraction> ::= $\lambda$ <VarList> '.' <Term> \\
+<VarList> ::= <Var> | <Var> <Spaces> <VarList> \\
+<Var> ::= a-z,\{a-z | A-Z0-9 | \_\} \\
+<Spaces> ::= '\space' | '\space' <Spaces>
+
+\end{document}
