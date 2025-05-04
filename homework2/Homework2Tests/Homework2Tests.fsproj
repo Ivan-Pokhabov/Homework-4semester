@@ -4,15 +4,14 @@
     <TargetFramework>net9.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <IsPackable>false</IsPackable>
-    <GenerateProgramFile>false</GenerateProgramFile>
+    <GenerateProgramFile>true</GenerateProgramFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="PrimeNumbers.test.fs" />
-    <Compile Include="MapTree.test.fs" />
-    <Compile Include="EvenNumbers.test.fs" />
-    <Compile Include="CalculationAST.test.fs" />
-    <Compile Include="Program.fs" />
+    <Compile Include="PrimeNumbersTest.fs" />
+    <Compile Include="MapTreeTest.fs" />
+    <Compile Include="EvenNumbersTest.fs" />
+    <Compile Include="CalculationAstTest.fs" />
   </ItemGroup>
 
   <ItemGroup>

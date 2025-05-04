@@ -1,9 +1,9 @@
-module Homework2.CalculationAST.Tests
+module Homework2CalculationAstTests
 
 open NUnit.Framework
 open FsUnit
 open FsCheck
-open Homework2.CalculationAST
+open Homework2CalculationAst
 
 let testCases () =
     [ Number 5, 5

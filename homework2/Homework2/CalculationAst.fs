@@ -1,12 +1,14 @@
-module Homework2.CalculationAST
+module Homework2CalculationAst
 
-type AST =
+// Struct of abstraction syntax tree
+type Ast =
     | Number of int
     | Add of AST * AST
     | Subtract of AST * AST
     | Multiply of AST * AST
     | Divide of AST * AST
 
+// Function of evaluating syntax tree expression
 let rec eval expr =
     match expr with
     | Number x -> x

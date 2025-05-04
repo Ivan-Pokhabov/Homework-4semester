@@ -1,8 +1,8 @@
-module Homework2.MapTree.Tests
+module Homework2MapTreeTests
 
 open NUnit.Framework
 open FsUnit
-open Homework2.MapTree
+open Homework2MapTree
 
 [<Test>]
 let ``mapTree should correctly map Node value`` () =

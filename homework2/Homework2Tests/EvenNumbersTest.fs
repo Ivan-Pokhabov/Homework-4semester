@@ -1,9 +1,9 @@
-﻿module Homework2.Tests
+﻿module Homework2Tests
 
 open NUnit.Framework
 open FsUnit
 open FsCheck
-open Homework2.EvenNumbers
+open Homework2EvenNumbers
 
 let testCases () =
     [ [1; 2; 3; 4; 5], 2

@@ -1,8 +1,8 @@
-module Homework2.PrimeNumbers.Tests
+module Homework2PrimeNumbersTests
 
 open NUnit.Framework
 open FsUnit
-open Homework2.PrimeNumbers
+open Homework2PrimeNumbers
 
 [<Test>]
 let ``isPrime should return true for prime numbers`` () =

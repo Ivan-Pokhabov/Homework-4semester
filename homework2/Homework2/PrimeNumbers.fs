@@ -1,4 +1,4 @@
-module Homework2.PrimeNumbers
+module Homework2PrimeNumbers
 
 let isPrime number = 
     if number < 2 then

@@ -1,4 +1,4 @@
-module Homework2.MapTree
+module Homework2MapTree
 
 type BinaryTree<'a> =
     | Node of 'a * BinaryTree<'a> * BinaryTree<'a>

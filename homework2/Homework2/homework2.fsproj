@@ -8,7 +8,7 @@
   <ItemGroup>
     <Compile Include="EvenNumbers.fs" />
     <Compile Include="MapTree.fs" />
-    <Compile Include="CalculationAST.fs" />
+    <Compile Include="CalculationAst.fs" />
     <Compile Include="PrimeNumbers.fs" />
   </ItemGroup>
 
