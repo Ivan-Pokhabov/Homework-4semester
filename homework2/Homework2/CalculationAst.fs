@@ -3,10 +3,10 @@ module Homework2CalculationAst
 // Struct of abstraction syntax tree
 type Ast =
     | Number of int
-    | Add of AST * AST
-    | Subtract of AST * AST
-    | Multiply of AST * AST
-    | Divide of AST * AST
+    | Add of Ast * Ast
+    | Subtract of Ast * Ast
+    | Multiply of Ast * Ast
+    | Divide of Ast * Ast
 
 // Function of evaluating syntax tree expression
 let rec eval expr =
