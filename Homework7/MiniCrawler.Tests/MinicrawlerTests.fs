@@ -1,4 +1,4 @@
-﻿module MiniCrawler.Tests
+﻿module MiniCrawlerTests
 
 open FsUnit
 open System.Net

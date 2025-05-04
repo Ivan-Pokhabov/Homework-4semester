@@ -1,4 +1,4 @@
-﻿module Lazy.Tests
+﻿module LazyTests
 
 
 open Lazy
